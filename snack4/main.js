@@ -1,6 +1,11 @@
 let dispari = []
 
-let numero = prompt("Pari o Dispari")
-for (let i = 0; dispari < 6; i++) {
 
+for (let i = 0; i < 6; i++) {
+    let numero = Number(prompt("Pari o Dispari"))
+
+    if (numero % 2 !== 0) {
+        dispari.push(numero)
+    }
 }
+console.log(dispari)
